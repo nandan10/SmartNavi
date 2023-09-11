@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="khushboo.rohit.osmnavi">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <library tools:node="removeAll" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".InputPhrase"></activity>
+        <activity android:name=".POIList" />
+        <activity android:name=".SearchPOI" />
+        <activity android:name=".debugAcitivity" />
+        <activity android:name=".shareLocActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddButton" />
+        <activity android:name=".ShowDb" />
+        <activity android:name=".Debug" />
+        <activity android:name=".ModifyRoute" />
+        <activity android:name=".SaveRoute" />
+
+        <activity android:name=".ShowRoutes" />
+        <activity android:name=".AddTags" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".image_recognition" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".ResultActivity1" />
+        <activity android:name=".text_recognition" />
+        <activity android:name=".SuggestRoute" />
+        <activity android:name=".NavigationActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCHDSuWvIGxx2RDkHPymRThlakfF_X_tpA" />
+        <meta-data
+    android:name="com.google.android.gms.version"
+    android:value="@integer/google_play_services_version"/>
+
+        <activity android:name=".pathReview" />
+
+
+    </application>
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+</manifest>

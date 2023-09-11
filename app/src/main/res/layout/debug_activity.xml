@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="khushboo.rohit.osmnavi.debugAcitivity">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="30"
+        android:background="#FF296596"
+        android:contentDescription="View instructions "
+        android:onClick="onDebugButton"
+        android:text="View Instructions"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="30"
+        android:background="#FF296596"
+        android:contentDescription="Show local database "
+        android:onClick="showMessage1"
+        android:text="Show Database"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button10"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="30"
+        android:background="#FF296596"
+        android:contentDescription="Clear Database "
+        android:onClick="clearData"
+        android:text="Clear Data"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="30"
+        android:background="#FF296596"
+        android:contentDescription="Exit "
+        android:onClick="onStopDebug"
+        android:text="Exit"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+
+</LinearLayout>
